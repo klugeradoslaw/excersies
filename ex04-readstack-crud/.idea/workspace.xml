@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae946cff-0ac0-440e-915a-211bf6f79b58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/config/DataSourceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/HelloServlet.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ae946cff-0ac0-440e-915a-211bf6f79b58" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

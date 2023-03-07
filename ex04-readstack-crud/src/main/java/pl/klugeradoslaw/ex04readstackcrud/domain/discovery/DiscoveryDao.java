@@ -1,5 +1,6 @@
 package pl.klugeradoslaw.ex04readstackcrud.domain.discovery;
 
+
 import pl.klugeradoslaw.ex04readstackcrud.config.DataSourceProvider;
 
 import javax.naming.NamingException;
