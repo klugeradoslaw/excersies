@@ -2,7 +2,6 @@ package pl.klugeradoslaw.ex04readstackcrud.domain.discovery;
 
 import java.time.LocalDateTime;
 
-class Discovery {
     public class Discovery {
         private Integer id;
         private String title;
@@ -49,4 +48,4 @@ class Discovery {
             return categoryId;
         }
     }
-}
+
