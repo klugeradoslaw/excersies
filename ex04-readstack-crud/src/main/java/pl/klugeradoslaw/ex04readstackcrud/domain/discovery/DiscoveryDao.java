@@ -49,16 +49,13 @@ public class DiscoveryDao {
         }
     }
 
-    private Discovery mapRow(ResultSet resultSet) {
+    private static Discovery mapRow(ResultSet set) throws SQLException {
         int discoveryId = set.getInt("id");
         String title = set.getString("title");
         String url = set.getString("url");
         String description = set.getString("description");
         LocalDateTime dateAdded = set.getTimestamp("date_added").toLocalDateTime();
         int categoryId = set.getInt("category_id");
-
         return new Discovery(discoveryId, title, url, description, dateAdded, categoryId);
-
     }
-
 }
