@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae946cff-0ac0-440e-915a-211bf6f79b58" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/discovery/Discovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/discovery/Discovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/discovery/DiscoveryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/discovery/DiscoveryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/DiscoveryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +165,7 @@
       <workItem from="1677861409218" duration="66000" />
       <workItem from="1677861622851" duration="1962000" />
       <workItem from="1677930788682" duration="2510000" />
-      <workItem from="1678217988465" duration="781000" />
+      <workItem from="1678217988465" duration="1697000" />
     </task>
     <servers />
   </component>
