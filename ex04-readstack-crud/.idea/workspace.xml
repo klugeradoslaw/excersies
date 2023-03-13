@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae946cff-0ac0-440e-915a-211bf6f79b58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/client/category/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/common/BaseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/DiscoveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/DiscoveryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/category/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/category/CategoryDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -181,7 +180,7 @@
       <workItem from="1677930788682" duration="2510000" />
       <workItem from="1678217988465" duration="1697000" />
       <workItem from="1678268608972" duration="3164000" />
-      <workItem from="1678689128981" duration="10605000" />
+      <workItem from="1678689128981" duration="12412000" />
     </task>
     <servers />
   </component>

@@ -1,29 +1,13 @@
 package pl.klugeradoslaw.ex04readstackcrud.domain.category;
 
-import pl.klugeradoslaw.ex04readstackcrud.config.DataSourceProvider;
+import pl.klugeradoslaw.ex04readstackcrud.domain.common.BaseDao;
 
-import javax.naming.NamingException;
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class CategoryDao {
-
-    private final DataSource dataSource;
-
-
-    public CategoryDao() {
-        try {
-            this.dataSource = DataSourceProvider.getDataSource();
-        } catch (NamingException e) {
-            throw new RuntimeException(e);
-        }
-    }
+public class CategoryDao extends BaseDao {
 
         public List<Category> findAll () {
             String query = """
@@ -33,7 +17,7 @@ public class CategoryDao {
                     category
                 """;
 
-            try (Connection connection = dataSource.getConnection();
+            try (Connection connection = getConnection();
                  Statement statement = connection.createStatement()) {
                 ResultSet resultSet = statement.executeQuery(query);
                 List<Category> allCategories = new ArrayList<>();
@@ -42,7 +26,6 @@ public class CategoryDao {
                     allCategories.add(category);
                 }
                 return allCategories;
-
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -56,10 +39,10 @@ public class CategoryDao {
                 WHERE 
                     id = ?
                 """;
-
-        try (Connection connection = dataSource.getConnection();
-             Statement statement = connection.createStatement()) {
-            ResultSet resultSet = statement.executeQuery(query);
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setInt(1, categoryId);
+            ResultSet resultSet = statement.executeQuery();
             List<Category> allCategories = new ArrayList<>();
             if (resultSet.next()) {
                 Category category = mapRow(resultSet);
