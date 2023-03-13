@@ -10,27 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae946cff-0ac0-440e-915a-211bf6f79b58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/CategoryFullInfoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/CategoryNameDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/category/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/category/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex05-lottery/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex05-lottery/src/main/java/pl/klugeradoslaw/ex05lottery/LotteryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex05-lottery/src/main/java/pl/klugeradoslaw/ex05lottery/LotteryResultDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex05-lottery/src/main/webapp/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/api/DiscoveryBasicInfoDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/discovery/DiscoveryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/discovery/DiscoveryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/home/client/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/client/home/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05-lottery/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex05-lottery/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05-lottery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex05-lottery/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05-lottery/src/main/java/pl/klugeradoslaw/ex05lottery/lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex05-lottery/src/main/java/pl/klugeradoslaw/ex05lottery/Lottery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/api/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/category/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/klugeradoslaw/ex04readstackcrud/domain/category/CategoryDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +179,7 @@
       <workItem from="1677930788682" duration="2510000" />
       <workItem from="1678217988465" duration="1697000" />
       <workItem from="1678268608972" duration="3164000" />
-      <workItem from="1678689128981" duration="6471000" />
+      <workItem from="1678689128981" duration="8567000" />
     </task>
     <servers />
   </component>

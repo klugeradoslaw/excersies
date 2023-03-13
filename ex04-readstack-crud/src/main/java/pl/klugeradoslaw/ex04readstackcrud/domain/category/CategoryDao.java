@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class CategoryDao {
 
@@ -30,8 +31,6 @@ public class CategoryDao {
                     id, name, description
                 FROM
                     category
-                WHERE 
-                    id = ?
                 """;
 
             try (Connection connection = dataSource.getConnection();
@@ -48,6 +47,31 @@ public class CategoryDao {
                 throw new RuntimeException(e);
             }
         }
+    public Optional<Category> findById (int categoryId) {
+        String query = """
+                SELECT
+                    id, name, description
+                FROM
+                    category
+                WHERE 
+                    id = ?
+                """;
+
+        try (Connection connection = dataSource.getConnection();
+             Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(query);
+            List<Category> allCategories = new ArrayList<>();
+            if (resultSet.next()) {
+                Category category = mapRow(resultSet);
+                return Optional.of(category);
+            }
+            return Optional.empty();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private Category mapRow(ResultSet set) throws SQLException {
         int id = set.getInt("id");
         String name = set.getString("name");
