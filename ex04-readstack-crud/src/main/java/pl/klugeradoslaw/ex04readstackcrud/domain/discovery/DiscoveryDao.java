@@ -4,10 +4,7 @@ import pl.klugeradoslaw.ex04readstackcrud.config.DataSourceProvider;
 
 import javax.naming.NamingException;
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +23,7 @@ public class DiscoveryDao {
 
     }
 
-    public List<Discovery> findAll () {
+    public List<Discovery> findAll() {
         final String query = """
                 SELECT
                     id, title, url, description, date_added, category_id
@@ -35,13 +32,39 @@ public class DiscoveryDao {
                 """;
 
         try (Connection connection = dataSource.getConnection();
-            Statement statement = connection.createStatement()) {
+             Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(query);
             List<Discovery> allDiscoveries = new ArrayList<>();
             while (resultSet.next()) {
                 Discovery discovery = mapRow(resultSet);
                 allDiscoveries.add(discovery);
-            } return allDiscoveries;
+            }
+            return allDiscoveries;
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Discovery> findByCategory(int categoryId) {
+        final String query = """
+                SELECT
+                    id, title, url, description, date_added, category_id
+                FROM
+                    discovery
+                WHERE
+                    category_id = ?
+                """;
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setInt(1, categoryId);
+            ResultSet resultSet = statement.executeQuery();
+            List<Discovery> discoveries = new ArrayList<>();
+            while (resultSet.next()) {
+                Discovery discovery = mapRow(resultSet);
+                discoveries.add(discovery);
+            }
+            return discoveries;
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
