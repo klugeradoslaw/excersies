@@ -13,7 +13,15 @@ public class DiscoveryService {
         return discoveryDao.findAll()
                 .stream().map(DiscoveryMapper::map)
                 .collect(Collectors.toList());
+
     }
+
+    public List<DiscoveryBasicInfoDto> findByCategory(int categoryId) {
+        return discoveryDao.findByCategory(categoryId)
+                .stream().map(DiscoveryMapper::map)
+                .collect(Collectors.toList());
+    }
+
     private static class DiscoveryMapper {
         static DiscoveryBasicInfoDto map(Discovery d) {
             return new DiscoveryBasicInfoDto(
