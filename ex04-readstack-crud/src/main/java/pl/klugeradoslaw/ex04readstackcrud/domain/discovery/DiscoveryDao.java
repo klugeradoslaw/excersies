@@ -1,11 +1,9 @@
 package pl.klugeradoslaw.ex04readstackcrud.domain.discovery;
 
-
 import pl.klugeradoslaw.ex04readstackcrud.config.DataSourceProvider;
 
 import javax.naming.NamingException;
 import javax.sql.DataSource;
-import java.awt.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
