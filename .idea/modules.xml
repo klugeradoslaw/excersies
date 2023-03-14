@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ex06/ex06.iml" filepath="$PROJECT_DIR$/ex06/ex06.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex06-git-learning/ex06-git-learning.iml" filepath="$PROJECT_DIR$/ex06-git-learning/ex06-git-learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/exercises.iml" filepath="$PROJECT_DIR$/.idea/exercises.iml" />
     </modules>
