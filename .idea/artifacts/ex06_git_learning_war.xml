@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ex06-git-learning:war">
+    <output-path>$PROJECT_DIR$/ex06-git-learning/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ex06-git-learning</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ex06-git-learning-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ex06-git-learning:war exploded" />
+    </root>
+  </artifact>
+</component>
